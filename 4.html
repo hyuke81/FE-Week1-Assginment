@@ -4,26 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 25px;
+        background-color: lightcyan;
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+
+      }
+      ul {
+        position: flex;
+        width: auto;
+        height: 60px;
+        background-color: lightblue;
+        text-align: right;
+      }
+      form {
+        position: flex;
+        width: cover;
+        height: 200px;
+        background-color: lightskyblue;
+      }
+      .main {
+        position: flex;
+        width: cover;
+        height: 600px;
+        background-color: rgb(76, 175, 237);
+      }
+      footer {
+        position: flex;
+        width: cover;
+        height: 30px;
+        background-color: rgb(6, 149, 239);
+        text-align: center;
+        font-weight: bold;
+        color: white;
+      }
+
+    </style>
   </head>
   <body>
-    <header>*** 블로그 입니다</header>
+    <header>권소현 블로그</header> 
     <nav>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DIARY</a></li>
-        <li><a href="#">MEDIA</a></li>
+        <a href="https://www.naver.com/">HOME</a>
+        <a href="https://github.com/hyuke81">GITHUB</a>
+        <a href="https://lionz12.netlify.app/">LIONZ</a>
       </ul>
     </nav>
     <article>
       <section>
         <form action="">
-          <input type="text" placeholder="아이디" />
-          <input type="password" placeholder="비밀번호" />
+          <input type="text" style="font-size: 12pt" placeholder="아이디" /> <br>
+          <input type="password" style="font-size: 12pt" placeholder="비밀번호" />
         </form>
       </section>
       <section>
-        <h2>안녕하세요!</h2>
-        <p>HTML 실습 과제입니다.</p>
+        <div class ="main">
+          <h2>안녕하세요!</h2>
+          <p>HTML 실습 과제입니다.</p>
+        </div>
       </section>
     </article>
     <footer>
